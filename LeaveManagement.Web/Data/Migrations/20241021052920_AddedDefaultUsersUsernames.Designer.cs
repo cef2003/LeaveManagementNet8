@@ -4,6 +4,7 @@ using LeaveManagement.Web.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LeaveManagement.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241021052920_AddedDefaultUsersUsernames")]
+    partial class AddedDefaultUsersUsernames
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -108,7 +111,7 @@ namespace LeaveManagement.Web.Data.Migrations
                         {
                             Id = "abc2004a-f10a-2a2b-9caa-90699a155a70",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9af4a09a-f265-4c38-bd04-d5d040645bac",
+                            ConcurrencyStamp = "981bbdd9-b181-4b4e-ba80-7ffa80100f97",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@user.com",
@@ -118,9 +121,9 @@ namespace LeaveManagement.Web.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@USER.COM",
                             NormalizedUserName = "ADMIN@USER.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEH3Bpt2YLNuaooqWXGITdSlBosP8vlYNIm1C3cv7bjlQEs+m/Bhx3DfSdEVr+BKttA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGSogt26og78JILKsk+Khxc8Tc2zlCSUb5D8cRrNIwFwlruvnCmsdlhO1liNpoVb5Q==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "5203e312-bdc5-4e13-8723-cbcf56d23a52",
+                            SecurityStamp = "32270032-cf36-4441-bf9b-100e97afe5c5",
                             TwoFactorEnabled = false,
                             UserName = "admin@user.com"
                         },
@@ -128,7 +131,7 @@ namespace LeaveManagement.Web.Data.Migrations
                         {
                             Id = "3f94d925-fa71-4291-83f0-229a6285bdba",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d4967ba9-b144-4377-8048-a1c6ae88fda0",
+                            ConcurrencyStamp = "60b57d7c-16f3-4f47-a9da-f77efe675c4b",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@localhost.com",
@@ -138,9 +141,9 @@ namespace LeaveManagement.Web.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEM3qKEXDtmq6uGqWoj/5FCXjpcIdZaY4kKIVxz+GCZSSlJ4srIkYwmWNF7ck/dQxEA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFiX7vtH+o0UbUD4hmVIrGyaMaIixV7rB6S+J1Mje8ssPlZI7vk+v6rBAtKWEWFaYQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ec80f557-f8d8-42a9-b3ae-3798c7940373",
+                            SecurityStamp = "e65e1888-463a-4cc5-8d62-282146ad52fe",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         });
@@ -336,7 +339,7 @@ namespace LeaveManagement.Web.Data.Migrations
                         new
                         {
                             UserId = "abc2004a-f10a-2a2b-9caa-90699a155a70",
-                            RoleId = "cff2013b-f10a-2024-9cfa-90699a155b70"
+                            RoleId = "cef2003b-f10a-2024-9caa-90699a155a70"
                         },
                         new
                         {
